@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Jokenpô</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>
+            Jokenpô Game
+        </h1>
+
+        <div class="buttons">
+            <button id="rock" onclick="playHuman ('rock')">
+                <img src="./assets/jo.png" alt="Rock">
+                <br>
+                <h2>Pedra</h2>
+            </button>
+
+            <button id="paper" onclick="playHuman ('paper')">
+                <img src="./assets/ken.png" alt="Paper">
+                <br>
+               <h2> Papel</h2>
+            </button>
+
+            <button id="scissors" onclick="playHuman ('scissors')">
+                <img src="./assets/po.png" alt="Scissors">
+                <br>
+               <h2>Tesoura</h2> 
+            </button>
+        </div>
+
+        <p class="result"></p>
+
+        <p class="victore-score">Vitórias: <span id="human-score">0</span></p>
+        <p class="fail-score">Derrotas: <span id="machine-score">0</span></p>
+    </div>
+    <script src="./scripts.js"></script>
+</body>
+
+</html>
